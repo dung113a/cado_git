@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Neon Whack-a-Mole</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrapper" id="gameWrapper">
+  <!-- có thể bỏ width/height ở đây, sẽ set bằng JS -->
+  <canvas id="gameCanvas"></canvas>
+
+  <div class="hud">
+    <div>Score: <span id="score">0</span></div>
+    <div>Time: <span id="time">60</span>s</div>
+    <div class="help">
+      點擊發光的圓環來「打滑鼠」🐹－速度越快得分越高！ 
+    </div>
+  </div>
+</div>
+
+
+  <script src="game.js"></script>
+</body>
+</html>

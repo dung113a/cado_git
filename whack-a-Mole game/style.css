@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+}
+
+/* body giữ nguyên flex-center cho đẹp */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #141b3f 0, #050610 50%, #010005 100%);
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  /* rất quan trọng: cho phép scale từ giữa */
+  transform-origin: center center;
+}
+
+#gameCanvas {
+  border-radius: 28px;
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.5),
+    0 0 60px rgba(255, 0, 255, 0.4);
+  background: #05030b;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  cursor: default;
+}
+
+/* phần .hud giữ như cũ */
+.hud {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hud span {
+  font-weight: 700;
+  color: #00e5ff;
+}
+
+.help {
+  opacity: 0.85;
+}
